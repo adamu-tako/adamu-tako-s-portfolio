@@ -1,4 +1,4 @@
-import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
+import { FiMapPin, FiMail } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 const contacts = [
@@ -11,11 +11,6 @@ const contacts = [
     id: 2,
     name: "amusatako@gmail.com",
     icon: <FiMail />,
-  },
-  {
-    id: 3,
-    name: "+2348067406886",
-    icon: <FiPhone />,
   },
   {
     id: 4,

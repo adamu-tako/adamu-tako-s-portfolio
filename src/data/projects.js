@@ -3,18 +3,30 @@ import WebImage2 from "../images/web-project-2.jpg";
 
 // Timart foods impots
 import foodsSm from "../images/timartFoods.png";
+import foodsOne from "../images/foodsOne.png";
+import foodsTwo from "../images/foodsTwo.png";
+import foodsThree from "../images/foodsThree.png";
 
 // ecommerce Imports
 import ecommerceSm from "../images/timartEcommerce.png";
+import commerceOne from "../images/commerceOne.png";
+import commerceTwo from "../images/commerceTwo.png";
+import commerceThree from "../images/commerceThree.png";
 
 // BizApp imports
 import bzAppSm from "../images/timartBizApp.png";
 
 // Jhunyour imports
 import jhunyourSm from "../images/jhunyourSm.png";
+import jayOne from "../images/jayOne.png";
+import jayTwo from "../images/jayTwo.png";
+import jayThree from "../images/jayThree.png";
 
 // Sydani imports
 import sydaniSm from "../images/sydaniSm.png";
+import sywebOne from "../images/sywebOne.png";
+import sywebTwo from "../images/sywebTwo.png";
+import sywebThree from "../images/sywebThree.png";
 
 // Scribe imports
 import scribeSm from "../images/scribeSm.png";
@@ -34,17 +46,17 @@ export const projectsData = [
       {
         id: 1,
         title: "Timart Foods",
-        img: WebImage2,
+        img: foodsOne,
       },
       {
         id: 2,
         title: "Timart Foods",
-        img: WebImage2,
+        img: foodsTwo,
       },
       {
         id: 3,
         title: "Timart Foods",
-        img: WebImage2,
+        img: foodsThree,
       },
     ],
     ProjectInfo: {
@@ -57,16 +69,16 @@ export const projectsData = [
           link: "",
         },
         {
-          id: 3,
+          id: 2,
           title: "Website",
-          link: "https://gettimart.com",
-          details: "Visit site",
+          link: "https://mellow-brioche-f35bac.netlify.app/",
+          details: "See project",
         },
         {
           id: 3,
           title: "Github repo",
           link: "",
-          details: "Visit site",
+          details: "Repo is Private",
         },
       ],
       ObjectivesHeading: "Project Description",
@@ -94,17 +106,17 @@ export const projectsData = [
       {
         id: 1,
         title: "Timart E-commerce",
-        img: WebImage2,
+        img: commerceOne,
       },
       {
         id: 2,
         title: "Timart E-commerce",
-        img: WebImage2,
+        img: commerceTwo,
       },
       {
         id: 3,
         title: "Timart E-commerce",
-        img: WebImage2,
+        img: commerceThree,
       },
     ],
     ProjectInfo: {
@@ -120,13 +132,13 @@ export const projectsData = [
           id: 3,
           title: "Website",
           link: "https://timart.com.ng",
-          details: "Visit site",
+          details: "See project",
         },
         {
           id: 3,
           title: "Github repo",
           link: "",
-          details: "Visit site",
+          details: "Repo is Private",
         },
       ],
       ObjectivesHeading: "Project Description",
@@ -142,9 +154,76 @@ export const projectsData = [
     },
   },
   {
+    id: 5,
+    title: "Sydani Group Website",
+    category: "Web Application",
+    img: sydaniSm,
+    ProjectHeader: {
+      title: "Sydani Group Website",
+      publishDate: "Jul 26, 2021",
+      tags: "Vue",
+    },
+    ProjectImages: [
+      {
+        id: 1,
+        title: "Sydani Group Website",
+        img: sywebOne,
+      },
+      {
+        id: 2,
+        title: "Sydani Group Website",
+        img: sywebTwo,
+      },
+      {
+        id: 3,
+        title: "Sydani Group Website",
+        img: sywebThree,
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: "Project Details",
+      CompanyInfo: [
+        {
+          id: 1,
+          title: "Name",
+          details: "Sydani Group Website",
+          link: "",
+        },
+        {
+          id: 3,
+          title: "Website",
+          link: "https://sydani.org/",
+          details: "See project",
+        },
+        {
+          id: 3,
+          title: "Github repo",
+          link: "",
+          details: "Repo is Private",
+        },
+      ],
+      ObjectivesHeading: "Project Description",
+      ObjectivesDetails:
+        "Sydani Initiative for International Development is a management consulting firm founded by seasoned international development and public health professionals with over 20 years combined experience and demonstrated expertise in the design and implementation of impactful policies, programs and practices that improve public health and international development.        This project is a web app built with Vue + Laravel it has a fullstack setup with CRUD operations that updates the UI. ",
+      Technologies: [
+        {
+          title: "Tools & Technologies",
+          techs: [
+            "HTML",
+            "CSS",
+            "Typescript",
+            "React",
+            "Tailwind",
+            "Chakra UI",
+          ],
+        },
+      ],
+    },
+  },
+  {
     id: 3,
     title: "Timart Business Application",
-    category: "Desktop/ Web Application",
+    category: "Desktop Application",
     img: bzAppSm,
     ProjectHeader: {
       title: "Timart Business Application",
@@ -181,13 +260,13 @@ export const projectsData = [
           id: 3,
           title: "Website",
           link: "https://timart.com.ng",
-          details: "Visit site",
+          details: "See project",
         },
         {
           id: 3,
           title: "Github repo",
           link: "",
-          details: "Visit site",
+          details: "Repo is Private",
         },
       ],
       ObjectivesHeading: "Project Description",
@@ -196,7 +275,15 @@ export const projectsData = [
       Technologies: [
         {
           title: "Tools & Technologies",
-          techs: ["HTML", "CSS", "Typescript", "React", "Styled Components"],
+          techs: [
+            "HTML",
+            "CSS",
+            "Typescript",
+            "React",
+            "Styled Components",
+            "Electron",
+            "Chromium",
+          ],
         },
       ],
     },
@@ -204,7 +291,7 @@ export const projectsData = [
   {
     id: 4,
     title: "Jhunyour's Design Portfolio",
-    category: "Desktop/ Web Application",
+    category: "Web Application",
     img: jhunyourSm,
     ProjectHeader: {
       title: "Jhunyour's Design Portfolio",
@@ -215,17 +302,17 @@ export const projectsData = [
       {
         id: 1,
         title: "Jhunyour's Design Portfolio",
-        img: WebImage2,
+        img: jayOne,
       },
       {
         id: 2,
         title: "Jhunyour's Design Portfolio",
-        img: WebImage2,
+        img: jayThree,
       },
       {
         id: 3,
         title: "Jhunyour's Design Portfolio",
-        img: WebImage2,
+        img: jayTwo,
       },
     ],
     ProjectInfo: {
@@ -241,85 +328,18 @@ export const projectsData = [
           id: 3,
           title: "Website",
           link: "https://jhunyour-portfolio-d4jd.vercel.app/",
-          details: "Visit site",
+          details: "See project",
         },
         {
           id: 3,
           title: "Github repo",
-          link: "",
-          details: "Visit site",
+          link: "https://github.com/adamu-tako/Jhunyour-Portfolio",
+          details: "See Project",
         },
       ],
       ObjectivesHeading: "Project Description",
       ObjectivesDetails:
         "Jhunyour is a passionate product and brand designer with four years of experience in design. He has contributed to the growth of startups and also involved in improving the experiences and usability of digital products accross E-commerce, Fintech, Edutech, Medtech, dashboards, mobile apps, websites and operating systems. This project is his design portfolio website.",
-      Technologies: [
-        {
-          title: "Tools & Technologies",
-          techs: [
-            "HTML",
-            "CSS",
-            "Typescript",
-            "React",
-            "Tailwind",
-            "Chakra UI",
-          ],
-        },
-      ],
-    },
-  },
-  {
-    id: 5,
-    title: "Sydani Group Website",
-    category: "Web Application",
-    img: sydaniSm,
-    ProjectHeader: {
-      title: "Sydani Group Website",
-      publishDate: "Jul 26, 2021",
-      tags: "Vue",
-    },
-    ProjectImages: [
-      {
-        id: 1,
-        title: "Sydani Group Website",
-        img: WebImage2,
-      },
-      {
-        id: 2,
-        title: "Sydani Group Website",
-        img: WebImage2,
-      },
-      {
-        id: 3,
-        title: "Sydani Group Website",
-        img: WebImage2,
-      },
-    ],
-    ProjectInfo: {
-      ClientHeading: "Project Details",
-      CompanyInfo: [
-        {
-          id: 1,
-          title: "Name",
-          details: "Sydani Group Website",
-          link: "",
-        },
-        {
-          id: 3,
-          title: "Website",
-          link: "https://sydani.org/",
-          details: "Visit site",
-        },
-        {
-          id: 3,
-          title: "Github repo",
-          link: "",
-          details: "Visit site",
-        },
-      ],
-      ObjectivesHeading: "Project Description",
-      ObjectivesDetails:
-        "Sydani Initiative for International Development is a management consulting firm founded by seasoned international development and public health professionals with over 20 years combined experience and demonstrated expertise in the design and implementation of impactful policies, programs and practices that improve public health and international development.        This project is a web app built with Vue + Laravel it has a fullstack setup with CRUD operations that updates the UI. ",
       Technologies: [
         {
           title: "Tools & Technologies",
@@ -372,16 +392,16 @@ export const projectsData = [
           link: "",
         },
         {
-          id: 3,
+          id: 2,
           title: "Website",
           link: "https://sydani-scribe-web-app.vercel.app/",
-          details: "Visit site",
+          details: "See project",
         },
         {
           id: 3,
-          title: "Github repo",
+          title: "Github Repo.",
           link: "",
-          details: "Visit site",
+          details: "Project is private",
         },
       ],
       ObjectivesHeading: "Project Description",

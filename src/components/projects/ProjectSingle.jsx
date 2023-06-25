@@ -32,7 +32,7 @@ const ProjectSingle = ({ title, image, category, tag }) => {
               {title}
             </p>
             <div className="flex justify-between px-5">
-              <span className="text-base text-ternarydark dark:text-ternary-light">
+              <span className="text-sm text-ternarydark dark:text-ternary-light">
                 {category}
               </span>
               <button

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 const useThemeSwitcher = () => {
   const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -13,7 +13,7 @@ const useThemeSwitcher = () => {
     localStorage.setItem("theme", theme);
   }, [theme, activeTheme]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isDark) {
       window.document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
