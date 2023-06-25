@@ -5,10 +5,10 @@ const ProjectInfo = () => {
   const { singleProjectData } = useContext(SingleProjectContext);
 
   return (
-    <div className="block gap-0 sm:gap-10 mt-14">
-      <div className="w-full block sm:flex justify-between px-10 sm:px-20">
+    <div className=" block gap-0 sm:flex sm:gap-10 mt-14">
+      <div className="w-full block px-10 sm:px-0">
         {/* Single project client details */}
-        <div className="mb-7">
+        <div className=" w-3/12 mb-7">
           <p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
             {singleProjectData.ProjectInfo.ClientHeading}
           </p>
@@ -19,16 +19,22 @@ const ProjectInfo = () => {
                   className="font-general-regular text-ternary-dark dark:text-ternary-light"
                   key={info.id}>
                   <span>{info.title}: </span>
-                  <a
-                    href="https://stoman.me"
-                    className={
-                      info.title === "Website" || info.title === "Phone"
-                        ? "hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300"
-                        : ""
-                    }
-                    aria-label="Project Website and Phone">
-                    {info.details}
-                  </a>
+                  {info.link ? (
+                    <a
+                      href={info.link}
+                      target="_blank"
+                      className={
+                        info.title === "Website"
+                          ? "hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300"
+                          : ""
+                      }
+                      aria-label="Project Website"
+                      rel="noreferrer">
+                      {info.details}
+                    </a>
+                  ) : (
+                    <a href="#####">{info.details}</a>
+                  )}
                 </li>
               );
             })}
@@ -46,19 +52,13 @@ const ProjectInfo = () => {
       </div>
 
       {/*  Single project right section */}
-      <div className="w-full text-left mt-10 sm:mt-0">
+      <div className="w-full text-justify mt-10 sm:mt-0">
         <p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
-          {singleProjectData.ProjectInfo.ProjectDetailsHeading}
+          {singleProjectData.ProjectInfo.ObjectivesHeading}
         </p>
-        {singleProjectData.ProjectInfo.ProjectDetails.map((details) => {
-          return (
-            <p
-              key={details.id}
-              className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light">
-              {details.details}
-            </p>
-          );
-        })}
+        <p className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light">
+          {singleProjectData.ProjectInfo.ObjectivesDetails}
+        </p>
       </div>
     </div>
   );

@@ -35,11 +35,6 @@ export const singleProjectData = {
         details: "Company Ltd",
       },
       {
-        id: 2,
-        title: "Services",
-        details: "UI Design & Frontend Development",
-      },
-      {
         id: 3,
         title: "Website",
         details: "https://company.com",
@@ -50,9 +45,9 @@ export const singleProjectData = {
         details: "555 8888 888",
       },
     ],
-    ObjectivesHeading: "Objective",
+    ObjectivesHeading: "Project Description",
     ObjectivesDetails:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quos quo adipisci facilis sed, reprehenderit beatae voluptate labore reiciendis ex a harum quasi veniam eius eum minus temporibus culpa ipsa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quos quo adipisci facilis sed, reprehenderit beatae voluptate labore reiciendis ex a harum quasi veniam eius eum minus temporibus culpa ipsa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quos quo adipisci facilis sed, reprehenderit beatae voluptate labore reiciendis ex a harum quasi veniam eius eum minus temporibus culpa ipsa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quos quo adipisci facilis sed, reprehenderit beatae voluptate labore reiciendis ex a harum quasi veniam eius eum minus temporibus culpa ipsa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quos quo adipisci facilis sed, reprehenderit beatae voluptate labore reiciendis ex a harum quasi veniam eius eum minus temporibus culpa ipsa!",
     Technologies: [
       {
         title: "Tools & Technologies",

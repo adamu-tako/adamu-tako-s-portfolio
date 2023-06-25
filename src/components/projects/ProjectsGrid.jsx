@@ -36,22 +36,26 @@ const ProjectsGrid = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+      <div className="grid grid-cols-1 px-10 sm:w-full sm:px-0 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
         {searchProject
           ? searchProjectsByTitle.map((project) => (
               <ProjectSingle
                 title={project.title}
                 category={project.category}
                 image={project.img}
-                key={project.id}
+                tag={project?.ProjectHeader?.tags}
+                id={project.id}
+                key={project.title}
               />
             ))
           : projects.map((project) => (
               <ProjectSingle
+                tag={project?.ProjectHeader?.tags}
                 title={project.title}
                 category={project.category}
+                id={project.id}
                 image={project.img}
-                key={project.id}
+                key={project.title}
               />
             ))}
       </div>
