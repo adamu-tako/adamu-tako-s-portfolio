@@ -12,7 +12,7 @@ const ContactForm = () => {
     subject: "",
     message: "",
   });
-  const [activeTheme, setTheme] = useThemeSwitcher();
+  const [activeTheme] = useThemeSwitcher();
 
   const handleChange = (event) => {
     const { name, value } = event.target;
